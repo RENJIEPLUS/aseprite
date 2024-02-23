@@ -44,10 +44,10 @@ jobs:
       shell: bash
       run: |
         cd build && ninja
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v3  
       with:
         name: aseprite
         path: |
-          D:/a/aseprite/aseprite/build/System32/libcrypto-1_1-x64.dll
-          D:/a/aseprite/aseprite/build/data
-          D:/a/aseprite/aseprite/build/aseprite.exe
+          System32/libcrypto-1_1-x64.dll
+          data
+          aseprite.exe
